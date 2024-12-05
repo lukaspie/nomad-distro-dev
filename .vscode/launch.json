@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+
     {
       "name": "gui",
       "type": "chrome",
@@ -12,7 +13,6 @@
       "name": "app",
       "type": "python",
       "request": "launch",
-      "justMyCode": false,
       "program": "${workspaceFolder}/.venv/bin/nomad",
       "args": ["admin", "run", "app"]
     },
