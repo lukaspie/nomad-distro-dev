@@ -32,3 +32,9 @@
 [submodule "packages/pynxtools-xrd"]
 	path = packages/pynxtools-xrd
 	url = git@github.com:FAIRmat-NFDI/pynxtools-xrd.git
+[submodule "packages/pynxtools-igor"]
+	path = packages/pynxtools-igor
+	url = git@github.com:FAIRmat-NFDI/pynxtools-igor.git
+[submodule "packages/pynxtools-spm"]
+	path = packages/pynxtools-spm
+	url = https://github.com/FAIRmat-NFDI/pynxtools-spm.git

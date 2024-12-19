@@ -11,13 +11,14 @@ dependencies = [
   # 'nomad-porous-materials; sys_platform != "win32"',
   # "nomad-aitoolkit",
   # "nomad-simulations==0.0.1",
-  "pynxtools>=0.8.2",
+  "pynxtools>=0.9.1",
   "pynxtools-apm",
   "pynxtools-ellips",
   "pynxtools-em",
+  "pynxtools-igor",
   "pynxtools-mpes",
   "pynxtools-raman",
-  "pynxtools-stm",
+  "pynxtools-spm",
   "pynxtools-xps",
   "pynxtools-xrd",
   # "nomad-schema-plugin-run>=1.0.1",
@@ -48,9 +49,10 @@ pynxtools = { workspace = true }
 pynxtools-apm = { workspace = true }
 pynxtools-ellips = { workspace = true }
 pynxtools-em = { workspace = true }
+pynxtools-igor = { workspace = true }
 pynxtools-mpes = { workspace = true }
 pynxtools-raman = { workspace = true }
-pynxtools-stm = { workspace = true }
+pynxtools-spm = { workspace = true }
 pynxtools-xps = { workspace = true }
 pynxtools-xrd = { workspace = true }
 
