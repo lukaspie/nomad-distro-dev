@@ -15,6 +15,7 @@ dependencies = [
   "pynxtools-apm",
   "pynxtools-ellips",
   "pynxtools-em",
+  "pynxtools-igor",
   "pynxtools-mpes",
   "pynxtools-raman",
   "pynxtools-spm",
@@ -45,9 +46,10 @@ pynxtools = { workspace = true }
 pynxtools-apm = { workspace = true }
 pynxtools-ellips = { workspace = true }
 pynxtools-em = { workspace = true }
+pynxtools-igor = { workspace = true }
 pynxtools-mpes = { workspace = true }
 pynxtools-raman = { workspace = true }
-pynxtools-stm = { workspace = true }
+pynxtools-spm = { workspace = true }
 pynxtools-xps = { workspace = true }
 pynxtools-xrd = { workspace = true }
 
