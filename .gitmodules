@@ -38,3 +38,6 @@
 [submodule "packages/pynxtools-spm"]
 	path = packages/pynxtools-spm
 	url = https://github.com/FAIRmat-NFDI/pynxtools-spm.git
+[submodule "packages/nomad-plugins"]
+	path = packages/nomad-plugins
+	url = https://github.com/FAIRmat-NFDI/nomad-plugins
