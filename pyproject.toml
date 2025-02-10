@@ -30,7 +30,8 @@ dependencies = [
   # "nomad-parser-plugins-electronic>=1.0",
   # "nomad-parser-plugins-atomistic>=1.0.6",
   # "nomad-parser-plugins-database>=1.0",
-  # "nomad-external-eln-integrations",
+  "nomad-external-eln-integrations",
+  "nomad-plugins",
 ]
 
 [tool.uv.workspace]
@@ -52,6 +53,7 @@ pynxtools-raman = { workspace = true }
 pynxtools-spm = { workspace = true }
 pynxtools-xps = { workspace = true }
 pynxtools-xrd = { workspace = true }
+nomad-plugins = { workspace = true }
 
 
 [tool.uv]
