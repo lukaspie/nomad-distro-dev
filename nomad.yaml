@@ -1,0 +1,8 @@
+keycloak:
+  realm_name: fairdi_nomad_test
+
+plugins:
+  entry_points:
+    exclude:
+      - "apps/2_theory/1_calculations"
+      - "apps/2_theory/2_materials"
