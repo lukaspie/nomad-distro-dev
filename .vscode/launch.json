@@ -11,14 +11,14 @@
     },
     {
       "name": "app",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/.venv/bin/nomad",
       "args": ["admin", "run", "app"]
     },
     {
       "name": "worker",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "justMyCode": false,
       "program": "${workspaceFolder}/.venv/bin/nomad",
@@ -26,7 +26,7 @@
     },
     {
       "name": "appworker",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "justMyCode": false,
       "program": "${workspaceFolder}/.venv/bin/nomad",
@@ -34,7 +34,7 @@
     },
     {
       "name": "hub",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "justMyCode": false,
       "program": "${workspaceFolder}/.venv/bin/nomad",
@@ -42,7 +42,7 @@
     },
     {
       "name": "nomad lab tests",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "cwd": "${workspaceFolder}/packages/nomad-FAIR",
       "program": "${workspaceFolder}/.venv/bin/pytest",
@@ -54,7 +54,7 @@
     },
     {
       "name": "nomad parse",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": "${workspaceFolder}/.venv/bin/nomad",
@@ -62,18 +62,18 @@
       "args": [
         "parse",
         "--show-archive",
-        "packages/nomad-FAIR/tests/data/parsers/vasp/vasp.xml"
+        "${workspaceFolder}/packages/pynxtools/src/pynxtools/data/201805_WSe2_arpes.nxs"
       ]
     },
     {
       "name": "Python: Current File",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${file}"
     },
     {
       "name": "Python: Attach",
-      "type": "python",
+      "type": "debugpy",
       "request": "attach",
       "localRoot": "${workspaceFolder}",
       "remoteRoot": "${workspaceFolder}",
