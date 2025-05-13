@@ -15,7 +15,6 @@ dependencies = [
   "pynxtools-apm",
   "pynxtools-ellips",
   "pynxtools-em",
-  "pynxtools-igor",
   "pynxtools-mpes",
   "pynxtools-raman",
   "pynxtools-spm",
@@ -30,8 +29,7 @@ dependencies = [
   # "nomad-parser-plugins-electronic>=1.0",
   # "nomad-parser-plugins-atomistic>=1.0.6",
   # "nomad-parser-plugins-database>=1.0",
-  "nomad-external-eln-integrations",
-  "nomad-plugins",
+  # "nomad-external-eln-integrations",
 ]
 
 [tool.uv.workspace]
@@ -47,13 +45,11 @@ pynxtools = { workspace = true }
 pynxtools-apm = { workspace = true }
 pynxtools-ellips = { workspace = true }
 pynxtools-em = { workspace = true }
-pynxtools-igor = { workspace = true }
 pynxtools-mpes = { workspace = true }
 pynxtools-raman = { workspace = true }
 pynxtools-spm = { workspace = true }
 pynxtools-xps = { workspace = true }
 pynxtools-xrd = { workspace = true }
-nomad-plugins = { workspace = true }
 
 
 [tool.uv]
