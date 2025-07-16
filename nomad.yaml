@@ -6,3 +6,6 @@ plugins:
     exclude:
       - "apps/2_theory/1_calculations"
       - "apps/2_theory/2_materials"
+
+temporal:
+  enabled: true
