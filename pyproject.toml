@@ -20,7 +20,7 @@ dependencies = [
   "pynxtools-spm",
   "pynxtools-xps",
   "pynxtools-xrd",
-  "eelsdbconverter",
+  # "eelsdbconverter",
   # "nomad-schema-plugin-run>=1.0.1",
   # "nomad-normalizer-plugin-dos>=1.0",
   # "nomad-normalizer-plugin-soap>=1.0",
@@ -45,6 +45,7 @@ pynxtools = { workspace = true }
 pynxtools-apm = { workspace = true }
 pynxtools-ellips = { workspace = true }
 pynxtools-em = { workspace = true }
+pynxtools-igor = { workspace = true }
 pynxtools-mpes = { workspace = true }
 pynxtools-raman = { workspace = true }
 pynxtools-spm = { workspace = true }
