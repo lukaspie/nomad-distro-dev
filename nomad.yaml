@@ -9,3 +9,6 @@ plugins:
       - "apps/3_experiment/2_eels"
 temporal:
   enabled: true
+services:
+  mode:
+    development
