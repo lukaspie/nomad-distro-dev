@@ -12,7 +12,7 @@ dependencies = [
   # 'nomad-porous-materials; sys_platform != "win32"',
   # "nomad-aitoolkit",
   # "nomad-simulations>=0.3.2",
-  "pynxtools>=0.11.1",
+  "pynxtools>=0.12.0",
   "pynxtools-apm",
   "pynxtools-ellips",
   "pynxtools-em",
@@ -30,6 +30,7 @@ dependencies = [
   # "nomad-parser-plugins-electronic>=1.0",
   # "nomad-parser-plugins-atomistic>=1.0.6",
   # "nomad-parser-plugins-database>=1.0",
+  # "nomad-tajine-plugin",
 ]
 
 [tool.uv.workspace]
@@ -51,6 +52,7 @@ pynxtools-raman = { workspace = true }
 pynxtools-spm = { workspace = true }
 pynxtools-xps = { workspace = true }
 pynxtools-xrd = { workspace = true }
+nomad-tajine-plugin = { workspace = true }
 
 
 [tool.uv]

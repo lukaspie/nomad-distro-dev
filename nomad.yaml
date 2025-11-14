@@ -7,6 +7,9 @@ plugins:
       - "apps/1_all/1_entries"
       - "apps/2_theory/1_calculations"
       - "apps/3_experiment/2_eels"
+    # options:
+    #   nomad_tajine_plugin.schema_packages:schema_tajine_entry_point:
+    #     usda_api_key: 'EjGOZwoLBLw8fDGKdSHzaWHxtEJLii9KhwaaLkP4'
 temporal:
   enabled: true
 services:
