@@ -46,3 +46,6 @@
 [submodule "packages/nomad-tajine-plugin"]
 	path = packages/nomad-tajine-plugin
 	url = https://github.com/FAIRmat-NFDI/nomad-tajine-plugin.git
+[submodule "packages/nomad-docs"]
+	path = packages/nomad-docs
+	url = https://github.com/FAIRmat-NFDI/nomad-docs.git
