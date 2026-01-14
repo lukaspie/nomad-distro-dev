@@ -62,7 +62,6 @@ extra-index-url = [
   "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple",
   "https://gitlab.mpcdf.mpg.de/api/v4/projects/8647/packages/pypi/simple",
 ]
-constraint-dependencies = ["hyperspy>=1.7.6"]
 required-version = ">=0.5.14"
 
 [dependency-groups]
@@ -127,12 +126,12 @@ capture_stdout = "packages/nomad-FAIR/gui/tests/env.js"
 env = { NOMAD_CONFIG = "packages/nomad-FAIR/gui/tests/nomad.yaml" }
 
 [tool.poe.tasks.gen-nomad-lock]
-cmd = "uv pip compile -U --universal -p 3.11 --extra parsing --extra infrastructure --extra dev --annotation-style=line pyproject.toml requirements.txt"
+cmd = "uv pip compile -U --universal -p 3.11 --extra infrastructure --extra dev --annotation-style=line pyproject.toml requirements.txt"
 capture_stdout = "packages/nomad-FAIR/requirements-dev.txt"
 cwd = "packages/nomad-FAIR"
 deps = ["gen-nomad-lock-without-dev"]
 
 [tool.poe.tasks.gen-nomad-lock-without-dev]
-cmd = "uv pip compile -U --universal -p 3.11 --extra parsing --extra infrastructure --annotation-style=line pyproject.toml"
+cmd = "uv pip compile -U --universal -p 3.11 --extra infrastructure --annotation-style=line pyproject.toml"
 cwd = "packages/nomad-FAIR"
 capture_stdout = "packages/nomad-FAIR/requirements.txt"
