@@ -75,9 +75,49 @@ services:
     ports:
       - 7233:7233
       - 8080:8080
+  north:
+      restart: unless-stopped
+      image: ghcr.io/fairmat-nfdi/nomad-distro-template:main
+      platform: linux/amd64
+      container_name: nomad_oasis_north
+      environment:
+        NOMAD_SERVICE: nomad_oasis_north
+        NOMAD_NORTH_DOCKER_NETWORK: nomad_oasis_network
+        NOMAD_NORTH_HUB_CONNECT_IP: north
+        NOMAD_NORTH_HUB_IP: "0.0.0.0"
+        NOMAD_NORTH_HUB_HOST: north
+        NOMAD_SERVICES_API_HOST: app
+        NOMAD_FS_EXTERNAL_WORKING_DIRECTORY: "$PWD"
+        NOMAD_RABBITMQ_HOST: rabbitmq
+        NOMAD_ELASTIC_HOST: elastic
+        NOMAD_MONGO_HOST: mongo
+      volumes:
+        - ./nomad.yaml:/app/nomad.yaml
+        - ./.volumes/fs:/app/.volumes/fs
+        - /var/run/docker.sock:/var/run/docker.sock
+      user: root # "1000:1001" # Change the docker group id (here 999) according to the host system
+      command: python -m nomad.cli admin run hub
+      healthcheck:
+        test:
+          [
+            "CMD",
+            "curl",
+            "--fail",
+            "--silent",
+            "http://localhost:8081/nomad-oasis/north/hub/health",
+          ]
+        interval: 10s
+        timeout: 100s
+        retries: 30
+        start_period: 10s
+      ports:
+        - 9000:9000
 volumes:
   nomad_mongo:
   nomad_mongo_config:
   nomad_elastic:
   nomad_rabbitmq:
   nomad_temporal:
+networks:
+  default:
+    name: nomad_oasis_network
