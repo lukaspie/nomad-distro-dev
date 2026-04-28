@@ -39,13 +39,40 @@
 	url = git@github.com:FAIRmat-NFDI/pynxtools-igor.git
 [submodule "packages/pynxtools-spm"]
 	path = packages/pynxtools-spm
-	url = https://github.com/FAIRmat-NFDI/pynxtools-spm.git
+	url = git@github.com:FAIRmat-NFDI/pynxtools-spm.git
 [submodule "docs"]
 	path = docs
 	url = git@github.com:FAIRmat-NFDI/nomad-docs.git
 [submodule "packages/nomad-tajine-plugin"]
 	path = packages/nomad-tajine-plugin
-	url = https://github.com/FAIRmat-NFDI/nomad-tajine-plugin.git
+	url = git@github.com:FAIRmat-NFDI/nomad-tajine-plugin.git
 [submodule "packages/nomad-docs"]
 	path = packages/nomad-docs
-	url = https://github.com/FAIRmat-NFDI/nomad-docs.git
+	url = git@github.com:FAIRmat-NFDI/nomad-docs.git
+[submodule "packages/nomad-north-jupyter"]
+	path = packages/nomad-north-jupyter
+	url = git@github.com:FAIRmat-NFDI/nomad-north-jupyter.git
+[submodule "packages/nomad-north-pyiron"]
+	path = packages/nomad-north-pyiron
+	url = git@github.com:FAIRmat-NFDI/nomad-north-pyiron.git
+[submodule "packages/nomad-measurements"]
+	path = packages/nomad-measurements
+	url = git@github.com:FAIRmat-NFDI/nomad-measurements.git
+[submodule "packages/nomad-north-apmtools"]
+	path = packages/nomad-north-apmtools
+	url = git@github.com:FAIRmat-NFDI/nomad-north-apmtools.git
+[submodule "packages/nomad-north-fiji"]
+	path = packages/nomad-north-fiji
+	url = git@github.com:FAIRmat-NFDI/nomad-north-fiji.git
+[submodule "packages/nomad-north-nionswift"]
+	path = packages/nomad-north-nionswift
+	url = git@github.com:FAIRmat-NFDI/nomad-north-nionswift.git
+[submodule "packages/nomad-north-vesta"]
+	path = packages/nomad-north-vesta
+	url = git@github.com:FAIRmat-NFDI/nomad-north-vesta.git
+[submodule "packages/nomad-north-voila"]
+	path = packages/nomad-north-voila
+	url = git@github.com:FAIRmat-NFDI/nomad-north-voila.git
+[submodule "nomad-north-voila"]
+	path = nomad-north-voila
+	url = git@github.com:FAIRmat-NFDI/nomad-north-voila.git
