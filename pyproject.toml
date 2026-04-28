@@ -15,9 +15,9 @@ dependencies = [
   # pynxtools and plugins
   # ------------------
   "pynxtools[dev,docs,nomad]>=0.13.2",
-  # "pynxtools-apm[dev,docs,nomad]",
+  "pynxtools-apm[dev,docs,nomad]",
   "pynxtools-ellips[dev,docs,nomad]",
-  # "pynxtools-em[dev,docs,nomad]",
+  "pynxtools-em[dev,docs,nomad]",
   "pynxtools-igor[dev,docs,nomad]",
   "pynxtools-mpes[dev,docs,nomad]",
   "pynxtools-raman[dev,docs,nomad]",
@@ -28,18 +28,18 @@ dependencies = [
   # ------------------
   # NORTH
   # ------------------
-  # "nomad-north-apmtools",
-  # "nomad-north-fiji",
+  "nomad-north-apmtools",
+  "nomad-north-fiji[dev]",
   "nomad-north-jupyter[dev]",
-  # "nomad-north-nionswift",
-  # "nomad-north-pyiron",
-  # "nomad-north-vesta",
+  "nomad-north-nionswift[dev]",
+  "nomad-north-pyiron[dev]",
+  "nomad-north-vesta[dev]",
   "nomad-north-voila[dev]",
   # ------------------
   # Other plugins
   # ------------------
   ### Other plugins
-  # "nomad-measurements",
+  "nomad-measurements",
   # ------------------
   # Unused default plugins
   # ------------------  
